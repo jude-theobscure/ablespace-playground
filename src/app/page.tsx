@@ -1,65 +1,71 @@
+"use client";
+
+import HeroCTAs from "@/components/HeroCTAs";
+import HeroTabs from "@/components/HeroTabs";
 import Image from "next/image";
+import { useState } from "react";
+
+const TAB_IMAGES = [
+  "/assets/screenshots/data-collection.png",
+  "/assets/screenshots/service-time-accomodations.png",
+  "/assets/screenshots/compliance.png",
+  "/assets/screenshots/ablespace-ai.png",
+];
 
 export default function Home() {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="flex-1">
+      <section className="w-full">
+      <div className="max-w-[1200px] mx-auto px-6 pt-24 pb-20 flex flex-col items-center text-center">
+
+        <h1
+          className="max-w-3xl text-[52px] font-bold leading-[1.15] tracking-tight text-[#2B3033]"
+          style={{ fontFamily: "var(--font-heading)" }}
+        >
+          AI-Powered IEP Tracking
+          <br />
+          for Sped-Ed Professionals
+        </h1>
+
+        <p className="mt-4 max-w-xl text-lg leading-relaxed text-[#5D696F]">
+          Simplify IEP data collection, accurately track student progress over time, and generate detailed reports—all within Ablespace.
+        </p>
+
+        <HeroCTAs />
+
+        <div className="mt-8 flex items-center gap-4">
+          <Image src="/assets/icons/security/Navbar/FERPA Compliant 1.png" alt="FERPA Compliant" width={90} height={36} className="h-9 w-auto" />
+          <Image src="/assets/icons/security/Navbar/HIPAA 1.png" alt="HIPAA" width={90} height={36} className="h-9 w-auto" />
+          <Image src="/assets/icons/security/Navbar/ISO 27001 Certified 1.png" alt="ISO 27001 Certified" width={90} height={36} className="h-9 w-auto" />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <HeroTabs onTabChange={setActiveTab} />
+
+        <div className="mt-8 w-full relative">
+          <div className="relative w-full max-w-[1000px] mx-auto">
+            {TAB_IMAGES.map((src, index) => (
+              <div
+                key={src}
+                className={`transition-opacity duration-300 ${
+                  activeTab === index ? "opacity-100 relative" : "opacity-0 absolute top-0 left-0 w-full pointer-events-none"
+                }`}
+              >
+                <Image
+                  src={src}
+                  alt={`Tab ${index + 1} Interface`}
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto rounded-[var(--radius-xl)] shadow-lg"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+
+      </div>
+      </section>
+    </main>
   );
 }
