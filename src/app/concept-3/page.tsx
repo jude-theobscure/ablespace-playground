@@ -118,7 +118,7 @@ export default function Concept3() {
               ))}
             </div>
           </div>
-          <div className="relative w-full max-w-[1000px] mx-auto rounded-[var(--radius-xl)] border border-[#F2F1F1] bg-[#FAF9F7] p-3">
+          <div className="relative w-full max-w-[1000px] mx-auto rounded-[var(--radius-xl)] border border-[#F2F1F1] bg-[#FFFDFA] p-3">
             {TAB_IMAGES.map((src, index) => (
               <div
                 key={src}
