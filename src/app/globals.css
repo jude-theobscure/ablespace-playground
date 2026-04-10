@@ -47,7 +47,7 @@
   --color-info:    #1d4ed8;
 
   /* Surface */
-  --color-background: #FFFEFC;
+  --color-background: #ffffff;
   --color-surface:    var(--color-neutral-50);
   --color-border:     var(--color-neutral-200);
   --color-text:       var(--color-neutral-900);
@@ -85,4 +85,14 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes tab-progress {
   from { stroke-dashoffset: 100.53; }
   to   { stroke-dashoffset: 0; }
+}
+
+@keyframes slide-up-in {
+  from { transform: translateY(110%); }
+  to   { transform: translateY(0); }
+}
+
+.profession-word {
+  display: block;
+  animation: slide-up-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }

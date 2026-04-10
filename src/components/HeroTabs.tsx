@@ -38,10 +38,10 @@ function AIIcon() {
   );
 }
 
-function CircleArrowLeftIcon() {
+function ArrowLeftIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-      <path d="M1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM7 12C7 12.3826 7.15024 12.6979 7.26855 12.8975C7.39619 13.1127 7.55804 13.311 7.71484 13.4824C8.02881 13.8257 8.42377 14.1676 8.77051 14.4551L8.80762 14.4873C9.02773 14.6699 9.26111 14.8623 9.46289 14.9912C9.60958 15.0849 10.1524 15.4302 10.7617 15.1299C11.3705 14.8297 11.4495 14.1787 11.4707 14.002C11.4997 13.7595 11.5001 13.4524 11.5 13.1621L11.5 13L16 13C16.5523 13 17 12.5523 17 12C17 11.4477 16.5523 11 16 11L11.5 11L11.5 10.8379C11.5001 10.5476 11.4997 10.2405 11.4707 9.99805C11.4495 9.82127 11.3705 9.17029 10.7617 8.87012C10.1524 8.56982 9.60958 8.91506 9.46289 9.00879C9.26111 9.13773 9.02773 9.33009 8.80762 9.51269L8.77051 9.54492C8.42377 9.83237 8.02881 10.1743 7.71484 10.5176C7.55804 10.689 7.39619 10.8873 7.26855 11.1025C7.15024 11.3021 7 11.6174 7 12Z" fill="currentColor"/>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M19 12H5M11 18l-6-6 6-6" />
     </svg>
   );
 }
@@ -89,7 +89,7 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
     timerRef.current = setInterval(() => {
       setActive((prev) => {
         const next = prev === TABS.length - 1 ? 0 : prev + 1;
-        onTabChange?.(next);
+        setTimeout(() => onTabChange?.(next), 0);
         return next;
       });
       setTimerKey(k => k + 1);
@@ -120,13 +120,15 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
   return (
     <div className="mt-32 flex items-center gap-3">
       {/* Left arrow */}
-      <button
-        onClick={handlePrev}
-        className="flex items-center justify-center px-3 self-stretch rounded-full bg-[#FAF9F7] border border-[#F2F1F1] text-[#938F8C] hover:text-[#4E4C4A] hover:bg-white transition-colors duration-200"
-        aria-label="Previous tab"
-      >
-        <CircleArrowLeftIcon />
-      </button>
+      <div className="relative w-11 h-11 flex-shrink-0">
+        <button
+          onClick={handlePrev}
+          className="absolute inset-[3px] flex items-center justify-center rounded-full bg-[#FAF9F7] border border-[#F2F1F1] text-[#938F8C] hover:text-[#4E4C4A] hover:bg-white transition-colors duration-200"
+          aria-label="Previous tab"
+        >
+          <ArrowLeftIcon />
+        </button>
+      </div>
 
       {/* Tabs container */}
       <div
@@ -158,7 +160,7 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
       <div className="relative w-11 h-11 flex-shrink-0">
         <button
           onClick={handleNext}
-          className="absolute inset-[3px] flex items-center justify-center rounded-full bg-white text-[#4E4C4A] hover:bg-[#FAF9F7] transition-colors duration-200 shadow-[var(--shadow-sm)]"
+          className="absolute inset-[3px] flex items-center justify-center rounded-full bg-[#FAF9F7] text-[#938F8C] hover:text-[#4E4C4A] hover:bg-white transition-colors duration-200"
           aria-label="Next tab"
         >
           <ArrowRightIcon />
