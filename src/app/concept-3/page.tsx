@@ -41,7 +41,7 @@ export default function Concept3() {
       header nav div a:not([style]):hover { background-color: #FFFDFA !important; color: #403B36 !important; }
       .concept-3 h1, .concept-3 h2, .concept-3 h3 { font-family: var(--font-montserrat) !important; color: #1C1A17 !important; }
       .concept-3 h1 span, .concept-3 h2 span, .concept-3 h3 span { color: inherit !important; }
-      .concept-3 p, .concept-3 span:not([class*="text-"]) { color: #595550; }
+      .concept-3 p, .concept-3 span:not([class*="text-"]) { color: #403B36; }
       body::after {
         content: '';
         position: fixed;
@@ -81,7 +81,7 @@ export default function Concept3() {
           </LayoutGroup>
         </h1>
 
-        <p className="mt-4 max-w-xl text-lg leading-relaxed text-[#5D696F]">
+        <p className="mt-4 max-w-xl text-lg leading-relaxed text-[#403B36]">
           Simplify IEP data collection, accurately track student progress over time, and generate detailed reports—all within Ablespace.
         </p>
 
