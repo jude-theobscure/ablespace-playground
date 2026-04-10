@@ -58,8 +58,8 @@ export default function Concept3() {
 <div className="max-w-[1200px] mx-auto px-6 pt-24 pb-20 flex flex-col items-center text-center relative z-10">
 
         <h1
-          className="max-w-3xl text-[52px] font-extrabold leading-[1.15] tracking-tight text-[#1C1A17]"
-          style={{ fontFamily: "var(--font-heading)" }}
+          className="max-w-3xl text-[52px] font-extrabold leading-[1.15] tracking-tight"
+          style={{ fontFamily: "var(--font-montserrat)", color: "#1C1A17" }}
         >
           <LayoutGroup>
             <motion.span className="flex flex-wrap items-center justify-center gap-x-4 gap-y-3" layout>
