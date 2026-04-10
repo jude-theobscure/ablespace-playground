@@ -123,7 +123,7 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
       <div className="relative w-11 h-11 flex-shrink-0">
         <button
           onClick={handlePrev}
-          className="absolute inset-[3px] flex items-center justify-center rounded-full bg-[#FAF9F7] text-[#938F8C] hover:text-[#4E4C4A] hover:bg-white transition-colors duration-200"
+          className="absolute inset-[3px] flex items-center justify-center rounded-full bg-[#FAF9F7] text-[#595550] hover:text-[#403B36] hover:bg-white transition-colors duration-200"
           aria-label="Previous tab"
         >
           <ArrowLeftIcon />
@@ -150,7 +150,7 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
             ref={(el) => { tabRefs.current[i] = el; }}
             onClick={() => handleTabChange(i)}
             className={`relative z-10 flex items-center gap-1.5 px-4 py-2 rounded-[var(--radius-md)] text-sm font-medium whitespace-nowrap transition-colors duration-200 ${
-              active === i ? "text-[#4E4C4A]" : "text-[#938F8C] hover:text-[#4E4C4A]"
+              active === i ? "text-[#403B36]" : "text-[#595550] hover:text-[#403B36]"
             }`}
           >
             {tab.icon}
@@ -163,7 +163,7 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
       <div className="relative w-11 h-11 flex-shrink-0">
         <button
           onClick={handleNext}
-          className="absolute inset-[3px] flex items-center justify-center rounded-full bg-[#FAF9F7] text-[#938F8C] hover:text-[#4E4C4A] hover:bg-white transition-colors duration-200"
+          className="absolute inset-[3px] flex items-center justify-center rounded-full bg-[#FAF9F7] text-[#595550] hover:text-[#403B36] hover:bg-white transition-colors duration-200"
           aria-label="Next tab"
         >
           <ArrowRightIcon />
