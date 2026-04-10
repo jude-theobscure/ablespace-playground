@@ -102,7 +102,7 @@ export default function Concept3() {
           <div className="absolute bottom-0 left-0 right-0 h-[75%] pointer-events-none z-10" style={{ background: `linear-gradient(to bottom, transparent, ${PAGE_BG} 60%, ${PAGE_BG})` }} />
           {/* Trust bar on top of gradient */}
           <div className="absolute bottom-6 left-0 right-0 z-20 flex flex-col items-center gap-6">
-            <p className="text-base tracking-wide text-[#8C857F]">
+            <p className="text-base tracking-wide text-[#403B36]">
               Trusted by <span className="font-bold">20,000+</span> Special Education Professionals
             </p>
             <div className="flex items-center justify-center flex-wrap gap-6">
