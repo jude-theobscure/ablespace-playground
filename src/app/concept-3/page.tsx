@@ -68,14 +68,14 @@ export default function Concept3() {
               <TextRotate
                 texts={PROFESSIONS}
                 mainClassName="text-[#2B3033] px-4 py-2 ml-2 bg-[#E5D5C5] overflow-hidden rounded-[14px] justify-center font-black italic"
-                staggerFrom="last"
-                initial={{ y: "100%" }}
-                animate={{ y: 0 }}
-                exit={{ y: "-120%" }}
-                staggerDuration={0.02}
+                staggerFrom="first"
+                initial={{ y: "100%", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: "-120%", opacity: 0 }}
+                staggerDuration={0.018}
                 splitLevelClassName="overflow-hidden"
-                transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                rotationInterval={2500}
+                transition={{ type: "tween", duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                rotationInterval={2800}
               />
             </motion.span>
           </LayoutGroup>
