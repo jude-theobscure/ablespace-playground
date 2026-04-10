@@ -40,6 +40,7 @@ export default function Concept3() {
       header a[style*="gradient"] { background: #D9614C !important; color: #FFFBFA !important; }
       header nav div a:not([style]):hover { background-color: #FFFDFA !important; color: #403B36 !important; }
       .concept-3 h1, .concept-3 h2, .concept-3 h3 { font-family: var(--font-montserrat) !important; color: #1C1A17 !important; }
+      .concept-3 h1 span, .concept-3 h2 span, .concept-3 h3 span { color: inherit !important; }
       .concept-3 p, .concept-3 span:not([class*="text-"]) { color: #595550; }
       body::after {
         content: '';
