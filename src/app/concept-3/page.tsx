@@ -2,6 +2,7 @@
 
 import HeroCTAs from "@/components/HeroCTAs";
 import HeroTabs from "@/components/HeroTabs";
+import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { LayoutGroup, motion } from "motion/react";
@@ -51,6 +52,12 @@ export default function Concept3() {
     <main className="flex-1">
       <section className="w-full relative overflow-hidden">
 <div className="max-w-[1200px] mx-auto px-6 pt-24 pb-20 flex flex-col items-center text-center relative z-10">
+
+        <div className="mb-6 rounded-full border border-black/10 bg-black/5 px-4 py-1.5 hover:cursor-pointer hover:bg-black/10 transition-all">
+          <AnimatedShinyText className="inline-flex items-center justify-center text-sm font-medium" shimmerWidth={120}>
+            ✨ AI-Powered IEP Tracking — Now Available
+          </AnimatedShinyText>
+        </div>
 
         <h1
           className="max-w-3xl text-[52px] font-bold leading-[1.15] tracking-tight text-[#2B3033]"

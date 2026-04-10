@@ -82,6 +82,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
 
+@keyframes shiny-text {
+  0%, 90%, 100% { background-position: calc(-100% - var(--shiny-width)) 0; }
+  30%, 60%      { background-position: calc(100% + var(--shiny-width)) 0; }
+}
+
+@theme inline {
+  --animate-shiny-text: shiny-text 8s infinite;
+}
+
 @keyframes tab-progress {
   from { stroke-dashoffset: 100.53; }
   to   { stroke-dashoffset: 0; }
