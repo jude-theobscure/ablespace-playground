@@ -123,11 +123,14 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
       <div className="relative w-11 h-11 flex-shrink-0">
         <button
           onClick={handlePrev}
-          className="absolute inset-[3px] flex items-center justify-center rounded-full bg-[#FAF9F7] border border-[#F2F1F1] text-[#938F8C] hover:text-[#4E4C4A] hover:bg-white transition-colors duration-200"
+          className="absolute inset-[3px] flex items-center justify-center rounded-full bg-[#FAF9F7] text-[#938F8C] hover:text-[#4E4C4A] hover:bg-white transition-colors duration-200"
           aria-label="Previous tab"
         >
           <ArrowLeftIcon />
         </button>
+        <svg className="absolute inset-0 pointer-events-none" width="44" height="44" viewBox="0 0 44 44">
+          <circle cx="22" cy="22" r="20" fill="none" stroke="#E8E6E3" strokeWidth="2" />
+        </svg>
       </div>
 
       {/* Tabs container */}
