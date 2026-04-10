@@ -90,9 +90,9 @@ export default function Concept3() {
         </div>
 
         <div className="mt-8 flex items-center gap-4">
-          <Image src="/assets/icons/security/Navbar/FERPA Compliant 1.png" alt="FERPA Compliant" width={90} height={36} className="h-9 w-auto" style={{ filter: "brightness(0)" }} />
-          <Image src="/assets/icons/security/Navbar/HIPAA 1.png" alt="HIPAA" width={90} height={36} className="h-9 w-auto" style={{ filter: "brightness(0)" }} />
-          <Image src="/assets/icons/security/Navbar/ISO 27001 Certified 1.png" alt="ISO 27001 Certified" width={90} height={36} className="h-9 w-auto" style={{ filter: "brightness(0)" }} />
+          <Image src="/assets/icons/security/Navbar/FERPA Compliant 1.png" alt="FERPA Compliant" width={90} height={36} className="h-9 w-auto" style={{ filter: "brightness(0)", opacity: 0.5 }} />
+          <Image src="/assets/icons/security/Navbar/HIPAA 1.png" alt="HIPAA" width={90} height={36} className="h-9 w-auto" style={{ filter: "brightness(0)", opacity: 0.5 }} />
+          <Image src="/assets/icons/security/Navbar/ISO 27001 Certified 1.png" alt="ISO 27001 Certified" width={90} height={36} className="h-9 w-auto" style={{ filter: "brightness(0)", opacity: 0.5 }} />
         </div>
 
         <HeroTabs onTabChange={setActiveTab} />
