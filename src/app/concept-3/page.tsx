@@ -2,6 +2,7 @@
 
 import HeroCTAs from "@/components/HeroCTAs";
 import HeroTabs from "@/components/HeroTabs";
+import { EtherealShadow } from "@/components/ui/etheral-shadow";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { LayoutGroup, motion } from "motion/react";
@@ -50,6 +51,15 @@ export default function Concept3() {
     `}</style>
     <main className="flex-1">
       <section className="w-full relative overflow-hidden">
+        {/* Ethereal shadow bg */}
+        <div className="absolute inset-0 z-0">
+          <EtherealShadow
+            color="rgba(210, 180, 140, 0.6)"
+            animation={{ scale: 60, speed: 30 }}
+            noise={{ opacity: 0.4, scale: 1.2 }}
+            sizing="fill"
+          />
+        </div>
 <div className="max-w-[1200px] mx-auto px-6 pt-24 pb-20 flex flex-col items-center text-center relative z-10">
 
         <h1
