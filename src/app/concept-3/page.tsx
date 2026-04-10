@@ -23,7 +23,7 @@ const TAB_IMAGES = [
   "/assets/screenshots/ablespace-ai.png",
 ];
 
-const PAGE_BG = "#fffaf3";
+const PAGE_BG = "#F8EEE2";
 
 export default function Concept3() {
   const [activeTab, setActiveTab] = useState(0);
@@ -37,6 +37,10 @@ export default function Concept3() {
     <>
     <style>{`
       header { background-color: ${PAGE_BG} !important; }
+      header a[style*="gradient"] { background: #D9614C !important; color: #FFFBFA !important; }
+      header nav div a:not([style]):hover { background-color: #FFFDFA !important; color: #403B36 !important; }
+      .concept-3 h1, .concept-3 h2, .concept-3 h3 { font-family: var(--font-montserrat) !important; color: #1C1A17 !important; }
+      .concept-3 p, .concept-3 span:not([class*="text-"]) { color: #595550; }
       body::after {
         content: '';
         position: fixed;
@@ -49,26 +53,20 @@ export default function Concept3() {
         background-size: 128px 128px;
       }
     `}</style>
-    <main className="flex-1">
+    <main className="flex-1 concept-3">
       <section className="w-full relative overflow-hidden">
 <div className="max-w-[1200px] mx-auto px-6 pt-24 pb-20 flex flex-col items-center text-center relative z-10">
 
-        <div className="mb-6 rounded-full border border-black/10 bg-black/5 px-4 py-1.5 hover:cursor-pointer hover:bg-black/10 transition-all">
-          <AnimatedShinyText className="inline-flex items-center justify-center text-sm font-medium" shimmerWidth={120}>
-            ✨ AI-Powered IEP Tracking — Now Available
-          </AnimatedShinyText>
-        </div>
-
         <h1
-          className="max-w-3xl text-[52px] font-bold leading-[1.15] tracking-tight text-[#2B3033]"
+          className="max-w-3xl text-[52px] font-extrabold leading-[1.15] tracking-tight text-[#1C1A17]"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           <LayoutGroup>
             <motion.span className="flex flex-wrap items-center justify-center gap-x-4 gap-y-3" layout>
-              <motion.span layout>AI-Powered IEP Tracking for</motion.span>
+              <motion.span layout>IEP Tracking Platform for</motion.span>
               <TextRotate
                 texts={PROFESSIONS}
-                mainClassName="text-white px-4 py-2 ml-2 bg-[#E8624A] overflow-hidden rounded-[var(--radius-md)] justify-center"
+                mainClassName="text-[#2B3033] px-4 py-2 ml-2 bg-[#E5D5C5] overflow-hidden rounded-[14px] justify-center font-black italic"
                 staggerFrom="last"
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
@@ -86,7 +84,9 @@ export default function Concept3() {
           Simplify IEP data collection, accurately track student progress over time, and generate detailed reports—all within Ablespace.
         </p>
 
-        <HeroCTAs />
+        <div className="relative z-[10000]">
+          <HeroCTAs primaryBg="#D9614C" primaryText="#FFFBFA" secondaryBg="#FFFDFA" secondaryText="#403B36" />
+        </div>
 
         <div className="mt-8 flex items-center gap-4">
           <Image src="/assets/icons/security/Navbar/FERPA Compliant 1.png" alt="FERPA Compliant" width={90} height={36} className="h-9 w-auto" />
@@ -183,7 +183,7 @@ export default function Concept3() {
                   <p className="text-base leading-relaxed text-[#5D636F] max-w-md">
                     AbleSpace uses AI to streamline IEP goal tracking — Collect Data with a single click, Organize it automatically, and ensure nothing slips through the cracks.
                   </p>
-                  <div className="-mt-2"><HeroCTAs textSize="text-sm" paddingY="py-[12px]" paddingX="px-[16px]" iconSize={18} radius="rounded-[10px]" equalWidth /></div>
+                  <div className="-mt-2"><HeroCTAs textSize="text-sm" paddingY="py-[12px]" paddingX="px-[16px]" iconSize={18} radius="rounded-[10px]" equalWidth primaryBg="#D9614C" primaryText="#FFFBFA" /></div>
                 </div>
                 {/* Testimonial */}
                 <div className="max-w-sm">
@@ -303,7 +303,7 @@ export default function Concept3() {
                   <p className="text-base leading-relaxed text-[#5D636F] max-w-md">
                     AbleSpace uses AI to streamline IEP goal tracking — Collect Data with a single click, Organize it automatically, and ensure nothing slips through the cracks.
                   </p>
-                  <div className="-mt-2"><HeroCTAs textSize="text-sm" paddingY="py-[12px]" paddingX="px-[16px]" iconSize={18} radius="rounded-[10px]" equalWidth /></div>
+                  <div className="-mt-2"><HeroCTAs textSize="text-sm" paddingY="py-[12px]" paddingX="px-[16px]" iconSize={18} radius="rounded-[10px]" equalWidth primaryBg="#D9614C" primaryText="#FFFBFA" /></div>
                 </div>
                 {/* Testimonial */}
                 <div className="max-w-sm">

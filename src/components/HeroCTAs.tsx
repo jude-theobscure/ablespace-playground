@@ -82,12 +82,12 @@ export default function HeroCTAs({
         style={{ ...primaryStyle, color: primaryText ?? '#F8FAFC' }}
       >
         Sign Up for Free
-        <span className="opacity-70"><ArrowRightIcon size={iconSize} /></span>
+        <span style={{ color: primaryText ?? '#F8FAFC', display: 'flex', opacity: 0.5 }}><ArrowRightIcon size={iconSize} /></span>
       </Link>
       <Link
         ref={secondaryRef}
         href="#"
-        className={`flex items-center justify-center gap-1.5 ${paddingX} ${paddingY} ${radius} ${textSize} font-semibold transition-colors whitespace-nowrap`}
+        className={`flex items-center justify-center gap-1.5 ${paddingX} ${paddingY} ${radius} ${textSize} font-semibold transition-all whitespace-nowrap hover:brightness-[0.99]`}
         style={{
           backgroundColor: secondaryBg ?? '#EDECEB',
           border: secondaryBorder ? `1px solid ${secondaryBorder}` : undefined,
@@ -95,7 +95,7 @@ export default function HeroCTAs({
         }}
       >
         Book a Demo
-        <span className="opacity-80"><CursorIcon size={iconSize} /></span>
+        <span><CursorIcon size={iconSize} /></span>
       </Link>
     </div>
   );
