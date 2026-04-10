@@ -113,7 +113,7 @@ export default function Concept3() {
                   alt={`District logo ${n}`}
                   width={120}
                   height={40}
-                  className="h-12 w-auto object-contain opacity-75" style={{ filter: "brightness(0)" }}
+                  className="h-12 w-auto object-contain opacity-75"
                 />
               ))}
             </div>
