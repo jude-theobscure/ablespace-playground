@@ -179,7 +179,7 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
           <circle
             cx="22" cy="22" r="20"
             fill="none"
-            stroke="#6B6866"
+            stroke="#E5D5C5"
             strokeWidth="2"
             strokeLinecap="round"
             strokeDasharray="125.66"
