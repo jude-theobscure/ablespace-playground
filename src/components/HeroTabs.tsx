@@ -136,7 +136,7 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
       {/* Tabs container */}
       <div
         ref={containerRef}
-        className="relative flex items-center gap-1 p-1 rounded-[var(--radius-lg)] bg-[#FAF9F7] border border-[#F2F1F1]"
+        className="relative flex items-center gap-1 p-1 rounded-[var(--radius-lg)] bg-[#FAF9F7]/50 border border-[#F2F1F1]"
       >
         {/* Sliding indicator */}
         <div
