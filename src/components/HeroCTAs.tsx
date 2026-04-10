@@ -69,7 +69,7 @@ export default function HeroCTAs({
 
   return (
     <div
-      className="mt-10 gap-3"
+      className="mt-8 gap-3"
       style={equalWidth
         ? { display: 'grid', gridTemplateColumns: '1fr 1fr', width: 'fit-content' }
         : { display: 'flex', alignItems: 'center' }
