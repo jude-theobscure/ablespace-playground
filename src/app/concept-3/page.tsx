@@ -154,7 +154,7 @@ export default function Concept3() {
                 className="text-[56px] font-black leading-[1.15] tracking-tight text-[#2B2E33]"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Smarter Way<br />to Track IEP Goals
+                Smarter IEP Tracking
               </h2>
             </div>
             <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
@@ -271,7 +271,7 @@ export default function Concept3() {
                 className="text-[56px] font-black leading-[1.15] tracking-tight text-[#2B2E33]"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                Smarter Way<br />to Track IEP Goals
+                Smarter IEP Tracking
               </h2>
             </div>
             <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
