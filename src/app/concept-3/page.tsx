@@ -246,10 +246,10 @@ export default function Concept3() {
       <section className="w-full py-24 dark-section" style={{ background: "#31302E" }}>
         <div className="max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center">
           <h2
-            className="text-[52px] font-bold leading-[1.15] tracking-tight"
+            className="text-[56px] font-extrabold leading-[1.15] tracking-tight"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
-            Supports Every Role,<br /><span className="font-extrabold italic">Empowers</span> Every Team
+            Supports Every Role,<br /><span className="font-black">Empowers</span> Every Team
           </h2>
         </div>
       </section>
