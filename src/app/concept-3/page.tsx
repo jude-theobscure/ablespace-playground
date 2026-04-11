@@ -144,7 +144,7 @@ export default function Concept3() {
       {/* Feature Card */}
       <section className="w-full py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex items-end justify-between pl-10 mb-0">
+          <div className="flex items-end justify-between pl-5 mb-5">
             <h2
               className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
               style={{ fontFamily: "var(--font-montserrat)" }}
@@ -255,7 +255,7 @@ export default function Concept3() {
       {/* Feature Card 2 */}
       <section className="w-full py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex items-end justify-between pl-10 mb-0">
+          <div className="flex items-end justify-between pl-5 mb-5">
             <h2
               className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
               style={{ fontFamily: "var(--font-montserrat)" }}
