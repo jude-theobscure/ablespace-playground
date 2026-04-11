@@ -156,9 +156,6 @@ export default function Concept3() {
               >
                 Smarter Way<br />to Track IEP Goals
               </h2>
-              <p className="mt-3 mb-8 text-base text-[#5D636F]">
-                Everything you need to collect data, stay compliant, and support every student — in one place.
-              </p>
             </div>
             <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
           </div>
@@ -276,9 +273,6 @@ export default function Concept3() {
               >
                 Smarter Way<br />to Track IEP Goals
               </h2>
-              <p className="mt-3 mb-8 text-base text-[#5D636F]">
-                Everything you need to collect data, stay compliant, and support every student — in one place.
-              </p>
             </div>
             <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
           </div>
