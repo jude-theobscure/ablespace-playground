@@ -147,7 +147,7 @@ export default function Concept3() {
           <div className="flex items-center justify-between pl-10">
             <div style={{ width: 480 }}>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[8px] mb-4" style={{ background: "#FFC9BF" }}>
-                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "invert(58%) sepia(30%) saturate(600%) hue-rotate(70deg) brightness(90%)" }} />
+                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "brightness(0) saturate(100%) invert(55%) sepia(25%) saturate(450%) hue-rotate(317deg) brightness(105%)" }} />
                 <span className="text-sm font-semibold text-[#BB7668]">IEP Tracking</span>
               </div>
               <h2
@@ -267,7 +267,7 @@ export default function Concept3() {
           <div className="flex items-center justify-between pl-10">
             <div style={{ width: 480 }}>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[8px] mb-4" style={{ background: "#FFC9BF" }}>
-                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "invert(58%) sepia(30%) saturate(600%) hue-rotate(70deg) brightness(90%)" }} />
+                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "brightness(0) saturate(100%) invert(55%) sepia(25%) saturate(450%) hue-rotate(317deg) brightness(105%)" }} />
                 <span className="text-sm font-semibold text-[#BB7668]">IEP Tracking</span>
               </div>
               <h2
