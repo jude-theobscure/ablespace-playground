@@ -146,9 +146,9 @@ export default function Concept3() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex items-center justify-between pl-10">
             <div style={{ width: 480 }}>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[8px] mb-4" style={{ background: "#FFC9BF" }}>
-                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "brightness(0) saturate(100%) invert(55%) sepia(25%) saturate(450%) hue-rotate(317deg) brightness(105%)" }} />
-                <span className="text-sm font-semibold text-[#BB7668]">IEP Tracking</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[8px] mb-4" style={{ background: "#E5D5C5" }}>
+                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "brightness(0) saturate(100%) invert(36%) sepia(8%) saturate(500%) hue-rotate(10deg) brightness(95%)" }} />
+                <span className="text-sm font-semibold text-[#595550]">IEP Tracking</span>
               </div>
               <h2
                 className="text-[44px] font-black leading-[1.15] tracking-tight text-[#2B2E33]"
@@ -266,9 +266,9 @@ export default function Concept3() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex items-center justify-between pl-10">
             <div style={{ width: 480 }}>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[8px] mb-4" style={{ background: "#FFC9BF" }}>
-                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "brightness(0) saturate(100%) invert(55%) sepia(25%) saturate(450%) hue-rotate(317deg) brightness(105%)" }} />
-                <span className="text-sm font-semibold text-[#BB7668]">IEP Tracking</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[8px] mb-4" style={{ background: "#E5D5C5" }}>
+                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "brightness(0) saturate(100%) invert(36%) sepia(8%) saturate(500%) hue-rotate(10deg) brightness(95%)" }} />
+                <span className="text-sm font-semibold text-[#595550]">IEP Tracking</span>
               </div>
               <h2
                 className="text-[44px] font-black leading-[1.15] tracking-tight text-[#2B2E33]"
