@@ -41,6 +41,7 @@ export default function Concept3() {
       header nav div a:not([style]):hover { background-color: #FFFDFA !important; color: #403B36 !important; }
       .concept-3 h1, .concept-3 h2, .concept-3 h3 { font-family: var(--font-montserrat) !important; color: #1C1A17 !important; }
       .concept-3 h1 span, .concept-3 h2 span, .concept-3 h3 span { color: inherit !important; }
+      .concept-3 .dark-section h2, .concept-3 .dark-section h2 span { color: #FFFDFA !important; }
       .concept-3 p, .concept-3 span:not([class*="text-"]) { color: #403B36; }
       body::after {
         content: '';
@@ -242,11 +243,11 @@ export default function Concept3() {
       </section>
 
       {/* Supports Every Role */}
-      <section className="w-full py-24" style={{ background: "#31302E" }}>
+      <section className="w-full py-24 dark-section" style={{ background: "#31302E" }}>
         <div className="max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center">
           <h2
             className="text-[52px] font-bold leading-[1.15] tracking-tight"
-            style={{ fontFamily: "var(--font-montserrat)", color: "#FFFDFA" }}
+            style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Supports Every Role,<br /><span className="font-extrabold italic">Empowers</span> Every Team
           </h2>
