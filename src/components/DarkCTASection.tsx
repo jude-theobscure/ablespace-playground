@@ -5,46 +5,62 @@ import Image from "next/image";
 import HeroCTAs from "@/components/HeroCTAs";
 
 export default function DarkCTASection() {
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const screenshotRef = useRef<HTMLDivElement>(null);
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const el = screenshotRef.current;
-    if (!el) return;
+    const wrapper = wrapperRef.current;
+    const screenshot = screenshotRef.current;
+    const text = textRef.current;
+    if (!wrapper || !screenshot || !text) return;
 
-    // Entrance
-    el.style.opacity = "0";
-    el.style.transform = "perspective(1200px) rotateX(8deg) rotateY(-4deg) translateY(24px)";
-    const timeout = setTimeout(() => {
-      el.style.transition = "all 1.4s cubic-bezier(0.16, 1, 0.3, 1)";
-      el.style.opacity = "1";
-      el.style.transform = "perspective(1200px) rotateX(4deg) rotateY(-2deg) translateY(0px)";
-    }, 300);
+    const onScroll = () => {
+      const rect = wrapper.getBoundingClientRect();
+      const totalHeight = wrapper.offsetHeight - window.innerHeight;
+      const scrolled = -rect.top;
+      const progress = Math.max(0, Math.min(1, scrolled / totalHeight));
 
-    const handleMouseMove = (e: MouseEvent) => {
-      const section = sectionRef.current;
-      if (!section) return;
-      const rect = section.getBoundingClientRect();
-      const cx = rect.left + rect.width / 2;
-      const cy = rect.top + rect.height / 2;
-      const dx = (e.clientX - cx) / rect.width;
-      const dy = (e.clientY - cy) / rect.height;
-      el.style.transition = "transform 0.3s ease";
-      el.style.transform = `perspective(1200px) rotateX(${4 - dy * 5}deg) rotateY(${-2 + dx * 5}deg)`;
+      // Screenshot rises from below as you scroll in
+      const screenshotY = 80 - progress * 80;
+      screenshot.style.transform = `perspective(1200px) rotateX(${6 - progress * 4}deg) translateY(${screenshotY}px)`;
+      screenshot.style.opacity = String(Math.min(1, progress * 2));
+
+      // Text fades in quickly
+      text.style.opacity = String(Math.min(1, progress * 3));
+      text.style.transform = `translateY(${(1 - Math.min(1, progress * 3)) * 20}px)`;
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    // Mouse tilt on screenshot
+    const onMouseMove = (e: MouseEvent) => {
+      const rect = wrapper.getBoundingClientRect();
+      if (rect.top > 0 || rect.bottom < 0) return;
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + window.innerHeight / 2;
+      const dx = (e.clientX - cx) / (rect.width / 2);
+      const dy = (e.clientY - cy) / (window.innerHeight / 2);
+      const totalHeight = wrapper.offsetHeight - window.innerHeight;
+      const progress = Math.max(0, Math.min(1, -rect.top / totalHeight));
+      const screenshotY = 80 - progress * 80;
+      screenshot.style.transition = "transform 0.2s ease";
+      screenshot.style.transform = `perspective(1200px) rotateX(${6 - progress * 4 - dy * 3}deg) rotateY(${dx * 4}deg) translateY(${screenshotY}px)`;
+    };
+
+    window.addEventListener("mousemove", onMouseMove, { passive: true });
+
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      clearTimeout(timeout);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("mousemove", onMouseMove);
     };
   }, []);
 
   return (
-    <div style={{ height: "180vh" }} className="relative">
+    <div ref={wrapperRef} style={{ height: "220vh" }} className="relative">
       <div
-        ref={sectionRef}
-        className="sticky top-0 w-full h-screen overflow-hidden flex flex-col items-center justify-center"
+        className="sticky top-0 w-full h-screen overflow-hidden flex flex-col items-center justify-start pt-20"
         style={{ background: "#31302E" }}
       >
         {/* Noise */}
@@ -59,44 +75,48 @@ export default function DarkCTASection() {
         />
 
         <div className="relative z-10 w-full max-w-[900px] mx-auto px-6 flex flex-col items-center text-center">
-          {/* Text */}
-          <h2
-            className="font-bold leading-[1.1] tracking-tight mb-3"
-            style={{ fontFamily: "var(--font-montserrat)", color: "#FFFDFA", fontSize: 48 }}
-          >
-            <span className="font-extrabold italic">Collect</span> Data in Seconds
-          </h2>
-          <p className="text-base mb-8 max-w-md" style={{ color: "#9E9590" }}>
-            One click, instant capture. AbleSpace makes IEP data collection so fast it disappears into your workflow.
-          </p>
-
-          <div className="relative z-[10000]">
-            <HeroCTAs
-              primaryBg="#D9614C"
-              primaryText="#FFFDFA"
-              secondaryBg="#3E3C39"
-              secondaryText="#FFFDFA"
-              secondaryBorder="#5A5854"
-            />
-          </div>
-
-          {/* Screenshot */}
-          <div className="mt-10 w-full">
-            <div
-              ref={screenshotRef}
-              style={{ willChange: "transform" }}
+          {/* Text group */}
+          <div ref={textRef} style={{ opacity: 0, transition: "opacity 0.1s, transform 0.1s" }}>
+            <h2
+              className="font-bold leading-[1.1] tracking-tight mb-3"
+              style={{ fontFamily: "var(--font-montserrat)", color: "#FFFDFA", fontSize: 48 }}
             >
-              <Image
-                src="/assets/screenshots/data-collection.png"
-                alt="Data collection"
-                width={900}
-                height={580}
-                className="w-full h-auto rounded-xl"
-                style={{
-                  boxShadow: "0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.07)",
-                }}
+              <span className="font-extrabold italic">Collect</span> Data in Seconds
+            </h2>
+            <p className="text-base mb-8 max-w-md mx-auto" style={{ color: "#9E9590" }}>
+              One click, instant capture. AbleSpace makes IEP data collection so fast it disappears into your workflow.
+            </p>
+            <div className="relative z-[10000]">
+              <HeroCTAs
+                primaryBg="#D9614C"
+                primaryText="#FFFDFA"
+                secondaryBg="#3E3C39"
+                secondaryText="#FFFDFA"
+                secondaryBorder="#5A5854"
               />
             </div>
+          </div>
+
+          {/* Screenshot with parallax */}
+          <div
+            ref={screenshotRef}
+            className="mt-10 w-full"
+            style={{
+              opacity: 0,
+              transform: "perspective(1200px) rotateX(6deg) translateY(80px)",
+              willChange: "transform, opacity",
+            }}
+          >
+            <Image
+              src="/assets/screenshots/data-collection.png"
+              alt="Data collection"
+              width={900}
+              height={580}
+              className="w-full h-auto rounded-xl"
+              style={{
+                boxShadow: "0 24px 64px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.07)",
+              }}
+            />
           </div>
         </div>
       </div>
