@@ -151,8 +151,8 @@ export default function Concept3() {
                 <span className="text-sm font-semibold text-[#595550]">IEP Tracking</span>
               </div>
               <h2
-                className="text-[44px] font-black leading-[1.15] tracking-tight text-[#2B2E33]"
-                style={{ fontFamily: "var(--font-heading)" }}
+                className="text-[44px] font-extrabold leading-[1.15] tracking-tight text-[#2B2E33]"
+                style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 Smarter Way<br />to Track IEP Goals
               </h2>
@@ -268,8 +268,8 @@ export default function Concept3() {
                 <span className="text-sm font-semibold text-[#595550]">IEP Tracking</span>
               </div>
               <h2
-                className="text-[44px] font-black leading-[1.15] tracking-tight text-[#2B2E33]"
-                style={{ fontFamily: "var(--font-heading)" }}
+                className="text-[44px] font-extrabold leading-[1.15] tracking-tight text-[#2B2E33]"
+                style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 Smarter Way<br />to Track IEP Goals
               </h2>
