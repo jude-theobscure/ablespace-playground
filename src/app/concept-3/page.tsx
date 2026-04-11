@@ -165,7 +165,7 @@ export default function Concept3() {
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
             style={{
-              background: PAGE_BG,
+              background: "#FFFDFA",
               border: "1px solid rgba(225,224,223,0.5)",
               boxShadow: "0px 8px 16px 0px rgba(173,173,166,0.04)",
               height: 520,
@@ -223,7 +223,7 @@ export default function Concept3() {
                 key={title}
                 className="rounded-2xl pt-8 px-8 pb-0 overflow-hidden flex flex-col"
                 style={{
-                  background: PAGE_BG,
+                  background: "#FFFDFA",
                   border: "1px solid rgba(225,224,223,0.5)",
                   boxShadow: "0px 8px 16px 0px rgba(173,173,166,0.04)",
                   height: 640,
@@ -285,7 +285,7 @@ export default function Concept3() {
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
             style={{
-              background: PAGE_BG,
+              background: "#FFFDFA",
               border: "1px solid rgba(225,224,223,0.5)",
               boxShadow: "0px 8px 16px 0px rgba(173,173,166,0.04)",
               height: 520,
@@ -343,7 +343,7 @@ export default function Concept3() {
                 key={title}
                 className="rounded-2xl pt-8 px-8 pb-0 overflow-hidden flex flex-col"
                 style={{
-                  background: PAGE_BG,
+                  background: "#FFFDFA",
                   border: "1px solid rgba(225,224,223,0.5)",
                   boxShadow: "0px 8px 16px 0px rgba(173,173,166,0.04)",
                   height: 640,
