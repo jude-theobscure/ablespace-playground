@@ -174,18 +174,6 @@ export default function Concept3() {
             <div className="flex flex-row gap-12 items-stretch h-full">
               {/* Left */}
               <div className="flex-1 flex flex-col justify-between pb-10">
-                <div>
-                  <h2
-                    className="text-[26px] font-[700] leading-[1.2] tracking-tight text-[#2B2E33] mb-3"
-                    style={{ fontFamily: "var(--font-heading)" }}
-                  >
-                    Effortless Data Tracking
-                  </h2>
-                  <p className="text-base leading-relaxed text-[#5D636F] max-w-md">
-                    AbleSpace uses AI to streamline IEP goal tracking — Collect Data with a single click, Organize it automatically, and ensure nothing slips through the cracks.
-                  </p>
-                  <div className="-mt-2"><HeroCTAs textSize="text-sm" paddingY="py-[12px]" paddingX="px-[16px]" iconSize={18} radius="rounded-[10px]" equalWidth primaryBg="#D9614C" primaryText="#FFFBFA" /></div>
-                </div>
                 {/* Testimonial */}
                 <div className="max-w-sm">
                   <div className="h-px bg-[#E8E4DF] mb-5" />
@@ -199,6 +187,18 @@ export default function Concept3() {
                       <p className="text-sm text-[#8C8882]">Special Education Teacher</p>
                     </div>
                   </div>
+                </div>
+                <div>
+                  <h2
+                    className="text-[26px] font-[700] leading-[1.2] tracking-tight text-[#2B2E33] mb-3"
+                    style={{ fontFamily: "var(--font-heading)" }}
+                  >
+                    Effortless Data Tracking
+                  </h2>
+                  <p className="text-base leading-relaxed text-[#5D636F] max-w-md">
+                    AbleSpace uses AI to streamline IEP goal tracking — Collect Data with a single click, Organize it automatically, and ensure nothing slips through the cracks.
+                  </p>
+                  <div className="-mt-2"><HeroCTAs textSize="text-sm" paddingY="py-[12px]" paddingX="px-[16px]" iconSize={18} radius="rounded-[10px]" equalWidth primaryBg="#D9614C" primaryText="#FFFBFA" /></div>
                 </div>
               </div>
               {/* Right — screenshot */}
@@ -294,18 +294,6 @@ export default function Concept3() {
             <div className="flex flex-row gap-12 items-stretch h-full">
               {/* Left */}
               <div className="flex-1 flex flex-col justify-between pb-10">
-                <div>
-                  <h2
-                    className="text-[26px] font-[700] leading-[1.2] tracking-tight text-[#2B2E33] mb-3"
-                    style={{ fontFamily: "var(--font-heading)" }}
-                  >
-                    Effortless Data Tracking
-                  </h2>
-                  <p className="text-base leading-relaxed text-[#5D636F] max-w-md">
-                    AbleSpace uses AI to streamline IEP goal tracking — Collect Data with a single click, Organize it automatically, and ensure nothing slips through the cracks.
-                  </p>
-                  <div className="-mt-2"><HeroCTAs textSize="text-sm" paddingY="py-[12px]" paddingX="px-[16px]" iconSize={18} radius="rounded-[10px]" equalWidth primaryBg="#D9614C" primaryText="#FFFBFA" /></div>
-                </div>
                 {/* Testimonial */}
                 <div className="max-w-sm">
                   <div className="h-px bg-[#E8E4DF] mb-5" />
@@ -319,6 +307,18 @@ export default function Concept3() {
                       <p className="text-sm text-[#8C8882]">Special Education Teacher</p>
                     </div>
                   </div>
+                </div>
+                <div>
+                  <h2
+                    className="text-[26px] font-[700] leading-[1.2] tracking-tight text-[#2B2E33] mb-3"
+                    style={{ fontFamily: "var(--font-heading)" }}
+                  >
+                    Effortless Data Tracking
+                  </h2>
+                  <p className="text-base leading-relaxed text-[#5D636F] max-w-md">
+                    AbleSpace uses AI to streamline IEP goal tracking — Collect Data with a single click, Organize it automatically, and ensure nothing slips through the cracks.
+                  </p>
+                  <div className="-mt-2"><HeroCTAs textSize="text-sm" paddingY="py-[12px]" paddingX="px-[16px]" iconSize={18} radius="rounded-[10px]" equalWidth primaryBg="#D9614C" primaryText="#FFFBFA" /></div>
                 </div>
               </div>
               {/* Right — screenshot */}
