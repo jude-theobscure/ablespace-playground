@@ -160,7 +160,7 @@ export default function Concept3() {
                 Everything you need to collect data, stay compliant, and support every student — in one place.
               </p>
             </div>
-            <Image src="/concept-3/illustrations/data-tracking.svg" alt="" width={240} height={240} className="mr-10" />
+            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
           </div>
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
@@ -280,7 +280,7 @@ export default function Concept3() {
                 Everything you need to collect data, stay compliant, and support every student — in one place.
               </p>
             </div>
-            <Image src="/concept-3/illustrations/data-tracking.svg" alt="" width={240} height={240} className="mr-10" />
+            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
           </div>
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
