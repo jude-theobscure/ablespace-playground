@@ -151,7 +151,7 @@ export default function Concept3() {
             >
               <span className="font-extrabold italic">Smarter</span> IEP Tracking
             </h2>
-            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block" style={{ marginBottom: -24 }} />
+            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block" style={{ marginBottom: -32 }} />
           </div>
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
@@ -262,7 +262,7 @@ export default function Concept3() {
             >
               <span className="font-extrabold italic">Smarter</span> IEP Tracking
             </h2>
-            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block" style={{ marginBottom: -24 }} />
+            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block" style={{ marginBottom: -32 }} />
           </div>
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
