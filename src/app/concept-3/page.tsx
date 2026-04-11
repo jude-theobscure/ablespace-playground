@@ -246,11 +246,35 @@ export default function Concept3() {
       <section className="w-full py-24 dark-section" style={{ background: "#31302E" }}>
         <div className="max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center">
           <h2
-            className="text-[56px] font-extrabold leading-[1.15] tracking-tight"
+            className="text-[56px] font-extrabold leading-[1.15] tracking-tight mb-16"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Supports Every Role,<br /><span className="font-black">Empowers</span> Every Team
           </h2>
+
+          <div className="grid grid-cols-4 gap-4 w-full">
+            {[
+              { num: "01", title: "Speech\nTherapists", desc: "Track communication goals, capture trial data, and monitor progress across sessions with ease." },
+              { num: "02", title: "Occupational\nTherapists", desc: "Document fine motor, sensory, and daily living skill goals in one streamlined workflow." },
+              { num: "03", title: "Special Ed\nTeachers", desc: "Manage IEPs, collect goal data, and generate compliance-ready reports without the paperwork." },
+              { num: "04", title: "Behavior\nAnalysts", desc: "Design behavior plans, record ABC data, and visualize trends with built-in graphing tools." },
+            ].map(({ num, title, desc }) => (
+              <div
+                key={num}
+                className="rounded-2xl p-8 flex flex-col text-left"
+                style={{ background: "#F8EEE2" }}
+              >
+                <span className="text-sm font-semibold mb-4" style={{ color: "#9E9590" }}>{num}</span>
+                <h3
+                  className="text-[22px] font-black leading-[1.15] tracking-tight mb-8 whitespace-pre-line"
+                  style={{ fontFamily: "var(--font-montserrat)", color: "#1C1A17" }}
+                >
+                  {title}
+                </h3>
+                <p className="text-sm leading-relaxed mt-auto" style={{ color: "#595550" }}>{desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
