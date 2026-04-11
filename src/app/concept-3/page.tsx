@@ -242,11 +242,11 @@ export default function Concept3() {
       </section>
 
       {/* Supports Every Role */}
-      <section className="w-full py-24">
+      <section className="w-full py-24" style={{ background: "#31302E" }}>
         <div className="max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center">
           <h2
             className="text-[52px] font-bold leading-[1.15] tracking-tight"
-            style={{ fontFamily: "var(--font-montserrat)", color: "#1C1A17" }}
+            style={{ fontFamily: "var(--font-montserrat)", color: "#FFFDFA" }}
           >
             Supports Every Role,<br /><span className="font-extrabold italic">Empowers</span> Every Team
           </h2>
