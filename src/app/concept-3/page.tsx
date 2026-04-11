@@ -249,15 +249,14 @@ export default function Concept3() {
             className="text-[56px] font-extrabold leading-[1.15] tracking-tight mb-16"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            Supports Every Role,<br /><span className="font-black">Empowers</span> Every Team
+            From Data to Progress—<span className="font-black">Effortlessly</span>
           </h2>
 
-          <div className="grid grid-cols-4 gap-4 w-full">
+          <div className="grid grid-cols-3 gap-4 w-full">
             {[
-              { num: "01", title: "Speech\nTherapists", desc: "Track communication goals, capture trial data, and monitor progress across sessions with ease." },
-              { num: "02", title: "Occupational\nTherapists", desc: "Document fine motor, sensory, and daily living skill goals in one streamlined workflow." },
-              { num: "03", title: "Special Ed\nTeachers", desc: "Manage IEPs, collect goal data, and generate compliance-ready reports without the paperwork." },
-              { num: "04", title: "Behavior\nAnalysts", desc: "Design behavior plans, record ABC data, and visualize trends with built-in graphing tools." },
+              { num: "01", title: "Capture", desc: "Easily log student data during sessions—no paperwork, no friction." },
+              { num: "02", title: "Analyze", desc: "Automatically generate graphs, reports, and insights in seconds." },
+              { num: "03", title: "Improve", desc: "Track progress, spot trends, and make smarter decisions for every student." },
             ].map(({ num, title, desc }) => (
               <div
                 key={num}
