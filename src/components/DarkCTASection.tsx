@@ -5,26 +5,32 @@ import Image from "next/image";
 import HeroCTAs from "@/components/HeroCTAs";
 
 export default function DarkCTASection() {
-  const canvasRef = useRef<HTMLDivElement>(null);
+  const screenshotRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+    const el = screenshotRef.current;
+    if (!el) return;
 
-    // Entrance animation
-    canvas.style.opacity = "0";
-    canvas.style.transform = "rotateX(6deg) rotateY(-6deg) scale(0.96)";
+    // Entrance
+    el.style.opacity = "0";
+    el.style.transform = "perspective(1200px) rotateX(8deg) rotateY(-4deg) translateY(24px)";
     const timeout = setTimeout(() => {
-      canvas.style.transition = "all 1.6s cubic-bezier(0.16, 1, 0.3, 1)";
-      canvas.style.opacity = "1";
-      canvas.style.transform = "rotateX(2deg) rotateY(-2deg) scale(1)";
-    }, 200);
+      el.style.transition = "all 1.4s cubic-bezier(0.16, 1, 0.3, 1)";
+      el.style.opacity = "1";
+      el.style.transform = "perspective(1200px) rotateX(4deg) rotateY(-2deg) translateY(0px)";
+    }, 300);
 
     const handleMouseMove = (e: MouseEvent) => {
-      const x = (window.innerWidth / 2 - e.pageX) / 40;
-      const y = (window.innerHeight / 2 - e.pageY) / 40;
-      canvas.style.transition = "transform 0.4s ease";
-      canvas.style.transform = `rotateX(${2 + y * 0.4}deg) rotateY(${-2 - x * 0.4}deg)`;
+      const section = sectionRef.current;
+      if (!section) return;
+      const rect = section.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = (e.clientX - cx) / rect.width;
+      const dy = (e.clientY - cy) / rect.height;
+      el.style.transition = "transform 0.3s ease";
+      el.style.transform = `perspective(1200px) rotateX(${4 - dy * 5}deg) rotateY(${-2 + dx * 5}deg)`;
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -35,30 +41,32 @@ export default function DarkCTASection() {
   }, []);
 
   return (
-    <div style={{ height: "160vh" }} className="relative">
-      <section
-        className="sticky top-0 w-full h-screen flex flex-col items-center justify-center overflow-hidden"
+    <div style={{ height: "180vh" }} className="relative">
+      <div
+        ref={sectionRef}
+        className="sticky top-0 w-full h-screen overflow-hidden flex flex-col items-center justify-center"
         style={{ background: "#31302E" }}
       >
-        {/* Noise overlay */}
+        {/* Noise */}
         <div
-          className="absolute inset-0 pointer-events-none z-0"
+          className="absolute inset-0 pointer-events-none"
           style={{
-            opacity: 0.25,
+            opacity: 0.2,
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
             backgroundRepeat: "repeat",
             backgroundSize: "128px 128px",
           }}
         />
 
-        <div className="relative z-10 max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center">
+        <div className="relative z-10 w-full max-w-[900px] mx-auto px-6 flex flex-col items-center text-center">
+          {/* Text */}
           <h2
-            className="text-[60px] font-bold leading-[1.1] tracking-tight whitespace-nowrap mb-4"
-            style={{ fontFamily: "var(--font-montserrat)", color: "#FFFDFA" }}
+            className="font-bold leading-[1.1] tracking-tight mb-3"
+            style={{ fontFamily: "var(--font-montserrat)", color: "#FFFDFA", fontSize: 48 }}
           >
             <span className="font-extrabold italic">Collect</span> Data in Seconds
           </h2>
-          <p className="text-lg mb-8 max-w-lg" style={{ color: "#B8AFA8" }}>
+          <p className="text-base mb-8 max-w-md" style={{ color: "#9E9590" }}>
             One click, instant capture. AbleSpace makes IEP data collection so fast it disappears into your workflow.
           </p>
 
@@ -72,29 +80,26 @@ export default function DarkCTASection() {
             />
           </div>
 
-          {/* 3D Screenshot */}
-          <div className="mt-12" style={{ perspective: "1400px" }}>
+          {/* Screenshot */}
+          <div className="mt-10 w-full">
             <div
-              ref={canvasRef}
-              style={{
-                transformStyle: "preserve-3d",
-                willChange: "transform",
-              }}
+              ref={screenshotRef}
+              style={{ willChange: "transform" }}
             >
               <Image
                 src="/assets/screenshots/data-collection.png"
                 alt="Data collection"
-                width={860}
-                height={560}
-                className="rounded-xl"
+                width={900}
+                height={580}
+                className="w-full h-auto rounded-xl"
                 style={{
-                  boxShadow: "0 32px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.06)",
+                  boxShadow: "0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.07)",
                 }}
               />
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
