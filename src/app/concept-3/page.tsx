@@ -157,7 +157,7 @@ export default function Concept3() {
                 Smarter IEP Tracking
               </h2>
             </div>
-            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
+            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0" />
           </div>
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
@@ -274,7 +274,7 @@ export default function Concept3() {
                 Smarter IEP Tracking
               </h2>
             </div>
-            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
+            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0" />
           </div>
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
