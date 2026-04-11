@@ -144,19 +144,13 @@ export default function Concept3() {
       {/* Feature Card */}
       <section className="w-full py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex items-center justify-between pl-10">
-            <div style={{ width: 480 }}>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[8px] mb-4" style={{ background: "#E5D5C5" }}>
-                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "brightness(0) saturate(100%) invert(36%) sepia(8%) saturate(500%) hue-rotate(10deg) brightness(95%)" }} />
-                <span className="text-sm font-semibold text-[#595550]">IEP Tracking</span>
-              </div>
-              <h2
-                className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
-                style={{ fontFamily: "var(--font-montserrat)" }}
-              >
-                <span className="font-extrabold italic">Smarter</span> IEP Tracking
-              </h2>
-            </div>
+          <div className="flex items-center justify-between pl-10 mb-4">
+            <h2
+              className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
+              style={{ fontFamily: "var(--font-montserrat)" }}
+            >
+              <span className="font-extrabold italic">Smarter</span> IEP Tracking
+            </h2>
             <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0" />
           </div>
           <div
@@ -261,19 +255,13 @@ export default function Concept3() {
       {/* Feature Card 2 */}
       <section className="w-full py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex items-center justify-between pl-10">
-            <div style={{ width: 480 }}>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[8px] mb-4" style={{ background: "#E5D5C5" }}>
-                <Image src="/assets/icons/target.svg" alt="" width={16} height={16} style={{ filter: "brightness(0) saturate(100%) invert(36%) sepia(8%) saturate(500%) hue-rotate(10deg) brightness(95%)" }} />
-                <span className="text-sm font-semibold text-[#595550]">IEP Tracking</span>
-              </div>
-              <h2
-                className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
-                style={{ fontFamily: "var(--font-montserrat)" }}
-              >
-                <span className="font-extrabold italic">Smarter</span> IEP Tracking
-              </h2>
-            </div>
+          <div className="flex items-center justify-between pl-10 mb-4">
+            <h2
+              className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
+              style={{ fontFamily: "var(--font-montserrat)" }}
+            >
+              <span className="font-extrabold italic">Smarter</span> IEP Tracking
+            </h2>
             <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0" />
           </div>
           <div
