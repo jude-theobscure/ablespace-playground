@@ -154,7 +154,7 @@ export default function Concept3() {
                 className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                <span className="font-black">Smarter</span> IEP Tracking
+                <span className="font-extrabold italic">Smarter</span> IEP Tracking
               </h2>
             </div>
             <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0" />
@@ -271,7 +271,7 @@ export default function Concept3() {
                 className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
-                <span className="font-black">Smarter</span> IEP Tracking
+                <span className="font-extrabold italic">Smarter</span> IEP Tracking
               </h2>
             </div>
             <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0" />
