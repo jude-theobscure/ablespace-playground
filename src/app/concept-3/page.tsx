@@ -2,7 +2,6 @@
 
 import HeroCTAs from "@/components/HeroCTAs";
 import HeroTabs from "@/components/HeroTabs";
-import DarkCTASection from "@/components/DarkCTASection";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -241,8 +240,6 @@ export default function Concept3() {
           </div>
         </div>
       </section>
-
-      <DarkCTASection />
 
       {/* Testimonial */}
       <section className="w-full py-[160px]">
