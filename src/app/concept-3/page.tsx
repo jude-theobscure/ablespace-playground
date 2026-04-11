@@ -39,7 +39,7 @@ export default function Concept3() {
       header { background-color: ${PAGE_BG} !important; }
       header a[style*="gradient"] { background: #D9614C !important; color: #FFFBFA !important; }
       header nav div a:not([style]):hover { background-color: #FFFDFA !important; color: #403B36 !important; }
-      .concept-3 h1, .concept-3 h2, .concept-3 h3 { font-family: var(--font-montserrat) !important; color: #1C1A17 !important; }
+      .concept-3 h1, .concept-3 h2, .concept-3 h3 { font-family: var(--font-heading) !important; color: #1C1A17 !important; }
       .concept-3 h1 span, .concept-3 h2 span, .concept-3 h3 span { color: inherit !important; }
       .concept-3 .dark-section h2, .concept-3 .dark-section h2 span { color: #FFFDFA !important; }
       .concept-3 p, .concept-3 span:not([class*="text-"]) { color: #403B36; }
@@ -61,7 +61,7 @@ export default function Concept3() {
 
         <h1
           className="max-w-3xl text-[52px] font-extrabold leading-[1.15] tracking-tight"
-          style={{ fontFamily: "var(--font-montserrat)", color: "#1C1A17" }}
+          style={{ fontFamily: "var(--font-heading)", color: "#1C1A17" }}
         >
           <LayoutGroup>
             <motion.span className="flex flex-wrap items-center justify-center gap-x-4 gap-y-3" layout>
@@ -148,7 +148,7 @@ export default function Concept3() {
           <div className="flex items-end justify-between pl-5 mb-8">
             <h2
               className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
-              style={{ fontFamily: "var(--font-montserrat)" }}
+              style={{ fontFamily: "var(--font-heading)" }}
             >
               <span className="font-extrabold italic">Smarter</span> IEP Tracking
             </h2>
@@ -247,7 +247,7 @@ export default function Concept3() {
         <div className="max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center">
           <h2
             className="text-[56px] font-extrabold leading-[1.15] tracking-tight mb-16"
-            style={{ fontFamily: "var(--font-montserrat)" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             Supports Every Role,<br /><span className="font-black">Empowers</span> Every Team
           </h2>
@@ -267,7 +267,7 @@ export default function Concept3() {
                 <span className="text-sm font-semibold mb-4" style={{ color: "#9E9590" }}>{num}</span>
                 <h3
                   className="text-[22px] font-black leading-[1.15] tracking-tight mb-8 whitespace-pre-line"
-                  style={{ fontFamily: "var(--font-montserrat)", color: "#1C1A17" }}
+                  style={{ fontFamily: "var(--font-heading)", color: "#1C1A17" }}
                 >
                   {title}
                 </h3>
@@ -295,7 +295,7 @@ export default function Concept3() {
           <div className="flex items-end justify-between pl-5 mb-8">
             <h2
               className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
-              style={{ fontFamily: "var(--font-montserrat)" }}
+              style={{ fontFamily: "var(--font-heading)" }}
             >
               <span className="font-extrabold italic">Smarter</span> IEP Tracking
             </h2>
