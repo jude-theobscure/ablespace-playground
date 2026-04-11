@@ -144,17 +144,17 @@ export default function Concept3() {
       {/* Feature Card */}
       <section className="w-full py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex items-end justify-between pl-5 mb-0">
+          <div className="flex items-end justify-between pl-5 mb-8">
             <h2
               className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               <span className="font-extrabold italic">Smarter</span> IEP Tracking
             </h2>
-            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block relative z-0" style={{ marginBottom: -120 }} />
+            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block" style={{ marginBottom: -40 }} />
           </div>
           <div
-            className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden relative z-10"
+            className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
             style={{
               background: "#FFFDFA",
               border: "1px solid rgba(225,224,223,0.5)",
@@ -255,17 +255,17 @@ export default function Concept3() {
       {/* Feature Card 2 */}
       <section className="w-full py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex items-end justify-between pl-5 mb-0">
+          <div className="flex items-end justify-between pl-5 mb-8">
             <h2
               className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               <span className="font-extrabold italic">Smarter</span> IEP Tracking
             </h2>
-            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block relative z-0" style={{ marginBottom: -120 }} />
+            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block" style={{ marginBottom: -40 }} />
           </div>
           <div
-            className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden relative z-10"
+            className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
             style={{
               background: "#FFFDFA",
               border: "1px solid rgba(225,224,223,0.5)",
