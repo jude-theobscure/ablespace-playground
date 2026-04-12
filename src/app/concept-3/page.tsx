@@ -254,10 +254,10 @@ export default function Concept3() {
 
           <div className="grid grid-cols-3 gap-4 w-full">
             {[
-              { num: "01", title: "Capture", desc: "Easily log student data during sessions—no paperwork, no friction." },
-              { num: "02", title: "Analyze", desc: "Automatically generate graphs, reports, and insights in seconds." },
-              { num: "03", title: "Improve", desc: "Track progress, spot trends, and make smarter decisions for every student." },
-            ].map(({ num, title, desc }) => (
+              { num: "01", title: "Capture", desc: "Easily log student data during sessions—no paperwork, no friction.", img: "/assets/illustrations/process-1.svg" },
+              { num: "02", title: "Analyze", desc: "Automatically generate graphs, reports, and insights in seconds.", img: "/assets/illustrations/process-2.svg" },
+              { num: "03", title: "Improve", desc: "Track progress, spot trends, and make smarter decisions for every student.", img: "/assets/illustrations/process-3.svg" },
+            ].map(({ num, title, desc, img }) => (
               <div
                 key={num}
                 className="rounded-2xl p-8 flex flex-col text-left"
@@ -265,11 +265,12 @@ export default function Concept3() {
               >
                 <span className="text-sm font-semibold mb-4" style={{ color: "#9E9590" }}>{num}</span>
                 <h3
-                  className="text-[22px] font-black leading-[1.15] tracking-tight mb-8 whitespace-pre-line"
+                  className="text-[22px] font-black leading-[1.15] tracking-tight mb-4 whitespace-pre-line"
                   style={{ fontFamily: "var(--font-heading)", color: "#1C1A17" }}
                 >
                   {title}
                 </h3>
+                <Image src={img} alt={title} width={80} height={80} className="mb-6" />
                 <p className="text-sm leading-relaxed mt-auto" style={{ color: "#595550" }}>{desc}</p>
               </div>
             ))}
