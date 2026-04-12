@@ -23,7 +23,7 @@ export default function HowItWorksSection() {
       const totalScroll = wrapper.offsetHeight - window.innerHeight;
       const progress = Math.max(0, Math.min(1, -rect.top / totalScroll));
       // Subtle upward parallax on inner content
-      const y = (0.5 - progress) * 40;
+      const y = (0.5 - progress) * 80;
       inner.style.transform = `translateY(${y}px)`;
     };
 
