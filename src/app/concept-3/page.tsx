@@ -273,7 +273,7 @@ export default function Concept3() {
                   </h3>
                 </div>
                 <div className="flex flex-col items-center">
-                  <Image src={img} alt={title} width={160} height={160} className="mb-4" />
+                  <Image src={img} alt={title} width={180} height={180} className="mb-4" />
                   <p className="font-medium leading-relaxed" style={{ color: "#595550", fontSize: 17 }}>{desc}</p>
                 </div>
               </div>
