@@ -260,7 +260,7 @@ export default function Concept3() {
             ].map(({ num, title, desc, img }) => (
               <div
                 key={num}
-                className="rounded-2xl p-8 flex flex-col items-center text-center"
+                className="rounded-3xl p-8 flex flex-col items-center text-center"
                 style={{ background: "#F8EEE2" }}
               >
                 <div className="flex flex-col items-center mb-10">
