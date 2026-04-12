@@ -249,7 +249,7 @@ export default function Concept3() {
             className="text-[56px] font-extrabold leading-[1.15] tracking-tight mb-16"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            From Data to Progress—<span className="font-black">Effortlessly</span>
+            How AbleSpace <span className="font-black">Works</span>
           </h2>
 
           <div className="grid grid-cols-3 gap-4 w-full">
