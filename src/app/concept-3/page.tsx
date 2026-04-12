@@ -246,11 +246,14 @@ export default function Concept3() {
       <section className="w-full py-24 dark-section" style={{ background: "#31302E" }}>
         <div className="max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center">
           <h2
-            className="text-[56px] font-extrabold leading-[1.15] tracking-tight mb-16"
+            className="text-[56px] font-extrabold leading-[1.15] tracking-tight"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             How AbleSpace <span className="font-black">Works</span>
           </h2>
+          <p className="text-base font-medium max-w-xl mt-4 mb-16" style={{ color: "#9E9590" }}>
+            Collect data effortlessly, transform it into actionable insights, and drive better outcomes for every student.
+          </p>
 
           <div className="grid grid-cols-3 gap-4 w-full">
             {[
