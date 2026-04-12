@@ -270,7 +270,7 @@ export default function Concept3() {
                 >
                   {title}
                 </h3>
-                <Image src={img} alt={title} width={80} height={80} className="mb-6" />
+                <Image src={img} alt={title} width={160} height={160} className="mb-6" />
                 <p className="font-semibold leading-relaxed mt-auto" style={{ color: "#595550", fontSize: 17 }}>{desc}</p>
               </div>
             ))}
