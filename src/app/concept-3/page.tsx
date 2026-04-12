@@ -256,7 +256,7 @@ export default function Concept3() {
             {[
               { num: "01", title: "Capture", desc: "Easily log student data during sessions—no paperwork, no friction.", img: "/assets/illustrations/process-1.svg" },
               { num: "02", title: "Analyze", desc: "Automatically generate graphs, reports, and insights in seconds.", img: "/assets/illustrations/process-2.svg" },
-              { num: "03", title: "Improve", desc: "Track progress, spot trends, and make smarter decisions for every student.", img: "/assets/illustrations/process-3.svg" },
+              { num: "03", title: "Improve", desc: "Track progress, spot trends, & make smarter decisions for students.", img: "/assets/illustrations/process-3.svg" },
             ].map(({ num, title, desc, img }) => (
               <div
                 key={num}
