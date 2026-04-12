@@ -265,7 +265,7 @@ export default function Concept3() {
               >
                 <span className="text-sm font-semibold mb-2" style={{ color: "#9E9590" }}>{num}</span>
                 <h3
-                  className="text-[22px] font-black leading-[1.15] tracking-tight mb-4 whitespace-pre-line"
+                  className="text-[28px] font-black leading-[1.15] tracking-tight mb-4 whitespace-pre-line"
                   style={{ fontFamily: "var(--font-heading)", color: "#1C1A17" }}
                 >
                   {title}
