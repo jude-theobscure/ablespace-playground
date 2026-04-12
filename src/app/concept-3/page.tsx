@@ -263,7 +263,7 @@ export default function Concept3() {
                 className="rounded-2xl p-8 flex flex-col items-center text-center"
                 style={{ background: "#F8EEE2" }}
               >
-                <span className="text-sm font-semibold mb-4" style={{ color: "#9E9590" }}>{num}</span>
+                <span className="text-sm font-semibold mb-2" style={{ color: "#9E9590" }}>{num}</span>
                 <h3
                   className="text-[22px] font-black leading-[1.15] tracking-tight mb-4 whitespace-pre-line"
                   style={{ fontFamily: "var(--font-heading)", color: "#1C1A17" }}
