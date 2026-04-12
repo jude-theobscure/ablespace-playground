@@ -2,6 +2,7 @@
 
 import HeroCTAs from "@/components/HeroCTAs";
 import HeroTabs from "@/components/HeroTabs";
+import HowItWorksSection from "@/components/HowItWorksSection";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -242,48 +243,7 @@ export default function Concept3() {
         </div>
       </section>
 
-      {/* Supports Every Role */}
-      <section className="w-full py-24 dark-section" style={{ background: "#31302E" }}>
-        <div className="max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center">
-          <h2
-            className="text-[56px] font-extrabold leading-[1.15] tracking-tight"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            How AbleSpace <span className="font-black">Works</span>
-          </h2>
-          <p className="font-medium mt-4 mb-16" style={{ color: "#9E9590", fontSize: 20, maxWidth: 720 }}>
-            From capturing session data to generating meaningful insights, seamlessly track student progress and identify trends that help improve outcomes.
-          </p>
-
-          <div className="grid grid-cols-3 gap-4 w-full">
-            {[
-              { num: "01", title: "Capture", desc: "Easily log student data during sessions—no paperwork, no friction.", img: "/assets/illustrations/process-1.svg" },
-              { num: "02", title: "Analyze", desc: "Automatically generate graphs, reports, and insights in seconds.", img: "/assets/illustrations/process-2.svg" },
-              { num: "03", title: "Improve", desc: "Track progress, spot trends, & make smarter decisions for students.", img: "/assets/illustrations/process-3.svg" },
-            ].map(({ num, title, desc, img }) => (
-              <div
-                key={num}
-                className="rounded-3xl p-8 flex flex-col items-center text-center"
-                style={{ background: "#F8EEE2" }}
-              >
-                <div className="flex flex-col items-center mb-10">
-                  <span className="font-semibold" style={{ color: "#9E9590", marginBottom: 2, fontSize: 17 }}>{num}</span>
-                  <h3
-                    className="text-[28px] font-extrabold leading-[1.15] tracking-tight whitespace-pre-line"
-                    style={{ fontFamily: "var(--font-heading)", color: "#1C1A17" }}
-                  >
-                    {title}
-                  </h3>
-                </div>
-                <div className="flex flex-col items-center">
-                  <Image src={img} alt={title} width={180} height={180} className="mb-4" />
-                  <p className="font-medium leading-relaxed" style={{ color: "#595550", fontSize: 17 }}>{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HowItWorksSection />
 
       {/* Testimonial */}
       <section className="w-full py-[160px]">
