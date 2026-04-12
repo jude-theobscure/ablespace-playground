@@ -252,7 +252,7 @@ export default function Concept3() {
             How AbleSpace <span className="font-black">Works</span>
           </h2>
           <p className="font-medium mt-4 mb-16" style={{ color: "#9E9590", fontSize: 20, maxWidth: 640 }}>
-            Collect data effortlessly, transform it into actionable insights, and drive better outcomes for every student.
+            From capturing session data to generating meaningful insights, seamlessly track student progress and identify trends that help improve outcomes.
           </p>
 
           <div className="grid grid-cols-3 gap-4 w-full">
