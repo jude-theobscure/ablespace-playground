@@ -263,15 +263,19 @@ export default function Concept3() {
                 className="rounded-2xl p-8 flex flex-col items-center text-center"
                 style={{ background: "#F8EEE2" }}
               >
-                <span className="font-semibold" style={{ color: "#9E9590", marginBottom: 2, fontSize: 17 }}>{num}</span>
-                <h3
-                  className="text-[28px] font-extrabold leading-[1.15] tracking-tight mb-4 whitespace-pre-line"
-                  style={{ fontFamily: "var(--font-heading)", color: "#1C1A17" }}
-                >
-                  {title}
-                </h3>
-                <Image src={img} alt={title} width={160} height={160} className="mb-6" />
-                <p className="font-semibold leading-relaxed mt-auto" style={{ color: "#595550", fontSize: 17 }}>{desc}</p>
+                <div className="flex flex-col items-center mb-6">
+                  <span className="font-semibold" style={{ color: "#9E9590", marginBottom: 2, fontSize: 17 }}>{num}</span>
+                  <h3
+                    className="text-[28px] font-extrabold leading-[1.15] tracking-tight whitespace-pre-line"
+                    style={{ fontFamily: "var(--font-heading)", color: "#1C1A17" }}
+                  >
+                    {title}
+                  </h3>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Image src={img} alt={title} width={160} height={160} className="mb-4" />
+                  <p className="font-semibold leading-relaxed" style={{ color: "#595550", fontSize: 17 }}>{desc}</p>
+                </div>
               </div>
             ))}
           </div>
