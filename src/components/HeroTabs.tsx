@@ -118,7 +118,7 @@ export default function HeroTabs({ onTabChange }: HeroTabsProps) {
   };
 
   return (
-    <div className="mt-32 flex items-center gap-3">
+    <div className="flex items-center gap-3">
       {/* Left arrow */}
       <div className="relative w-11 h-11 flex-shrink-0">
         <button

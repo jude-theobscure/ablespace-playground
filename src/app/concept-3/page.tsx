@@ -37,7 +37,7 @@ export default function Concept3() {
   return (
     <>
     <style>{`
-      header { background-color: ${PAGE_BG} !important; }
+      header { background-color: ${PAGE_BG} !important; border-color: #F2E5D5 !important; }
       header a[style*="gradient"] { background: #D9614C !important; color: #FFFBFA !important; }
       header nav div a:not([style]):hover { background-color: #FFFDFA !important; color: #403B36 !important; }
       .concept-3 h1, .concept-3 h2, .concept-3 h3 { font-family: var(--font-heading) !important; color: #1C1A17 !important; }
@@ -57,7 +57,7 @@ export default function Concept3() {
       }
     `}</style>
     <main className="flex-1 concept-3">
-      <section className="w-full relative overflow-hidden">
+      <section className="w-full relative">
 <div className="max-w-[1200px] mx-auto px-6 pt-24 pb-20 flex flex-col items-center text-center relative z-10">
 
         <h1
@@ -69,7 +69,7 @@ export default function Concept3() {
               <motion.span layout>IEP Tracking Platform for</motion.span>
               <TextRotate
                 texts={PROFESSIONS}
-                mainClassName="text-[#2B3033] px-4 py-2 ml-2 bg-[#E5D5C5] overflow-hidden rounded-[14px] justify-center font-black italic"
+                mainClassName="text-[#2B3033] px-4 py-2 ml-2 bg-[#E5D5C5] overflow-hidden rounded-[14px] justify-center font-black"
                 staggerFrom="first"
                 initial={{ y: "100%", opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -97,7 +97,9 @@ export default function Concept3() {
           <Image src="/assets/icons/security/Navbar/ISO 27001 Certified 1.png" alt="ISO 27001 Certified" width={90} height={36} className="h-9 w-auto" style={{ filter: "brightness(0)", opacity: 0.45 }} />
         </div>
 
-        <HeroTabs onTabChange={setActiveTab} />
+        <div className="w-full flex justify-center" style={{ marginTop: 120 }}>
+          <HeroTabs onTabChange={setActiveTab} />
+        </div>
 
         <div className="mt-8 w-full relative">
           {/* Bottom fade */}
@@ -148,10 +150,10 @@ export default function Concept3() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex items-end justify-between pl-5 mb-8">
             <h2
-              className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
+              className="text-[70px] font-extrabold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              <span className="font-extrabold italic">Smarter</span> IEP Tracking
+              <span className="font-extrabold">Smarter</span> IEP Tracking
             </h2>
             <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block" style={{ marginBottom: -32 }} />
           </div>
@@ -242,31 +244,19 @@ export default function Concept3() {
           </div>
         </div>
       </section>
-
       <HowItWorksSection />
-
-      {/* Testimonial */}
-      <section className="w-full py-[160px]">
-        <div className="max-w-[800px] mx-auto px-6 flex flex-col items-center text-center relative">
-          <Image src="/assets/icons/quote.svg" alt="" width={64} height={64} className="absolute -top-4 -left-4 opacity-40" />
-          <p className="text-[32px] font-black text-[#403830] mb-6" style={{ fontFamily: "var(--font-heading)", lineHeight: 1.2 }}>
-            Ablespace AI has saved me so much time.<br />Writing IEP goals and notes is faster, easier,<br />and actually enjoyable now!
-          </p>
-          <p className="text-[18px] font-bold text-[#89837D]">Josephine Williams, Special Ed. Teacher</p>
-        </div>
-      </section>
 
       {/* Feature Card 2 */}
       <section className="w-full py-20">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex items-end justify-between pl-5 mb-8">
+          <div className="flex items-end justify-start gap-6 pl-5 mb-8">
+            <Image src="/concept-3/illustrations/features-ai.svg" alt="" width={240} height={240} className="mr-0 block" style={{ marginBottom: -32 }} />
             <h2
-              className="text-[70px] font-bold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
+              className="text-[70px] font-extrabold leading-[1.15] tracking-tight text-[#2B2E33] whitespace-nowrap"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              <span className="font-extrabold italic">Smarter</span> IEP Tracking
+              Powered by AI
             </h2>
-            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-0 block" style={{ marginBottom: -32 }} />
           </div>
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
@@ -379,8 +369,7 @@ export default function Concept3() {
           </div>
         </div>
       </section>
-
-</section>
+      </section>
     </main>
     </>
   );
