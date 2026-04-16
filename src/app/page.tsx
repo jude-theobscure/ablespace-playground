@@ -16,10 +16,10 @@ const PROFESSIONS = [
 ];
 
 const TAB_IMAGES = [
-  "/assets/screenshots/data-collection.png",
-  "/assets/screenshots/service-time-accomodations.png",
-  "/assets/screenshots/compliance.png",
-  "/assets/screenshots/ablespace-ai.png",
+  "/common/screenshots/iep-tracking.png",
+  "/common/screenshots/service-time.png",
+  "/common/screenshots/compliance.png",
+  "/common/screenshots/ablespace-ai.png",
 ];
 
 export default function Home() {
@@ -60,9 +60,9 @@ export default function Home() {
         <HeroCTAs />
 
         <div className="mt-8 flex items-center gap-4">
-          <Image src="/assets/icons/security/Navbar/FERPA Compliant 1.png" alt="FERPA Compliant" width={90} height={36} className="h-9 w-auto" />
-          <Image src="/assets/icons/security/Navbar/HIPAA 1.png" alt="HIPAA" width={90} height={36} className="h-9 w-auto" />
-          <Image src="/assets/icons/security/Navbar/ISO 27001 Certified 1.png" alt="ISO 27001 Certified" width={90} height={36} className="h-9 w-auto" />
+          <Image src="/common/icons/security/ferpa.png" alt="FERPA Compliant" width={90} height={36} className="h-9 w-auto" />
+          <Image src="/common/icons/security/hipaa.png" alt="HIPAA" width={90} height={36} className="h-9 w-auto" />
+          <Image src="/common/icons/security/iso-27001.png" alt="ISO 27001 Certified" width={90} height={36} className="h-9 w-auto" />
         </div>
 
         <HeroTabs onTabChange={setActiveTab} />
@@ -79,7 +79,7 @@ export default function Home() {
               {[2,3,4,5,6,7,8,9].map(n => (
                 <Image
                   key={n}
-                  src={`/concept-2/logos/district-logo-white ${n}.png`}
+                  src={`/common/logos/district-logo-${n}.png`}
                   alt={`District logo ${n}`}
                   width={120}
                   height={40}
@@ -130,7 +130,7 @@ export default function Home() {
                 Everything you need to collect data, stay compliant, and support every student — in one place.
               </p>
             </div>
-            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
+            <Image src="/common/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
           </div>
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
@@ -174,7 +174,7 @@ export default function Home() {
               {/* Right — screenshot */}
               <div className="flex-1 overflow-hidden relative">
                 <Image
-                  src="/assets/screenshots/data-collection.png"
+                  src="/common/screenshots/iep-tracking.png"
                   alt="Data collection screenshot"
                   fill
                   style={{ objectFit: "cover", objectPosition: "left top" }}
@@ -186,8 +186,8 @@ export default function Home() {
           {/* Two smaller cards */}
           <div className="mt-4 grid grid-cols-2 gap-4">
             {[
-              { title: "Rubrics and 8+ Goal Data Types", desc: "Generate session reports and progress summaries, with detailed IEP tracking built in.", img: "/assets/features/data-collection/data-types.png" },
-              { title: "Reports and Graphs", desc: "Generate session reports and progress summaries, with detailed IEP tracking built in.", img: "/assets/features/data-collection/reports-graphs.png" },
+              { title: "Rubrics and 8+ Goal Data Types", desc: "Generate session reports and progress summaries, with detailed IEP tracking built in.", img: "/common/features/data-types.png" },
+              { title: "Reports and Graphs", desc: "Generate session reports and progress summaries, with detailed IEP tracking built in.", img: "/common/features/reports-graphs.png" },
             ].map(({ title, desc, img }) => (
               <div
                 key={title}
@@ -250,7 +250,7 @@ export default function Home() {
                 Everything you need to collect data, stay compliant, and support every student — in one place.
               </p>
             </div>
-            <Image src="/assets/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
+            <Image src="/common/illustrations/char-girl.svg" alt="" width={240} height={240} className="mr-10" />
           </div>
           <div
             className="rounded-2xl pl-10 pt-10 pb-0 pr-0 overflow-hidden"
@@ -294,7 +294,7 @@ export default function Home() {
               {/* Right — screenshot */}
               <div className="flex-1 overflow-hidden relative">
                 <Image
-                  src="/assets/screenshots/data-collection.png"
+                  src="/common/screenshots/iep-tracking.png"
                   alt="Data collection screenshot"
                   fill
                   style={{ objectFit: "cover", objectPosition: "left top" }}
@@ -306,8 +306,8 @@ export default function Home() {
           {/* Two smaller cards */}
           <div className="mt-4 grid grid-cols-2 gap-4">
             {[
-              { title: "Rubrics and 8+ Goal Data Types", desc: "Generate session reports and progress summaries, with detailed IEP tracking built in.", img: "/assets/features/data-collection/data-types.png" },
-              { title: "Reports and Graphs", desc: "Generate session reports and progress summaries, with detailed IEP tracking built in.", img: "/assets/features/data-collection/reports-graphs.png" },
+              { title: "Rubrics and 8+ Goal Data Types", desc: "Generate session reports and progress summaries, with detailed IEP tracking built in.", img: "/common/features/data-types.png" },
+              { title: "Reports and Graphs", desc: "Generate session reports and progress summaries, with detailed IEP tracking built in.", img: "/common/features/reports-graphs.png" },
             ].map(({ title, desc, img }) => (
               <div
                 key={title}

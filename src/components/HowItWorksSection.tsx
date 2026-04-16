@@ -4,9 +4,9 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const CARDS = [
-  { num: "01", title: "Capture", desc: "Easily log student data during sessions—no paperwork, no friction.", img: "/assets/illustrations/process-1.svg", rotate: -3, bg: "#F8EEE2", speed: 0.06 },
-  { num: "02", title: "Analyze", desc: "Automatically generate graphs, reports, and insights in seconds.", img: "/assets/illustrations/process-2.svg", rotate: 1.5, bg: "#F6E7D5", speed: 0.10 },
-  { num: "03", title: "Improve", desc: "Track progress, spot trends, & make smarter decisions for students.", img: "/assets/illustrations/process-3.svg", rotate: -2, bg: "#F8EEE2", speed: 0.07 },
+  { num: "01", title: "Capture", desc: "Easily log student data during sessions—no paperwork, no friction.", img: "/common/illustrations/process-1.svg", rotate: -3, bg: "#F8EEE2", speed: 0.06 },
+  { num: "02", title: "Analyze", desc: "Automatically generate graphs, reports, and insights in seconds.", img: "/common/illustrations/process-2.svg", rotate: 1.5, bg: "#F6E7D5", speed: 0.10 },
+  { num: "03", title: "Improve", desc: "Track progress, spot trends, & make smarter decisions for students.", img: "/common/illustrations/process-3.svg", rotate: -2, bg: "#F8EEE2", speed: 0.07 },
 ];
 
 export default function HowItWorksSection() {
@@ -37,7 +37,7 @@ export default function HowItWorksSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full py-24 dark-section relative" style={{ background: "#31302E", borderRadius: 44 }}>
+    <section ref={sectionRef} className="w-full py-[128px] dark-section relative" style={{ background: "#31302E", borderRadius: 44 }}>
       {/* Noise */}
       <div
         className="absolute inset-0 pointer-events-none"

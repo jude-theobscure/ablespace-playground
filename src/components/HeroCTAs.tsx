@@ -33,6 +33,7 @@ interface HeroCTAsProps {
   iconSize?: number;
   radius?: string;
   equalWidth?: boolean;
+  swap?: boolean;
 }
 
 export default function HeroCTAs({
@@ -48,6 +49,7 @@ export default function HeroCTAs({
   iconSize = 20,
   radius = "rounded-[var(--radius-lg)]",
   equalWidth = false,
+  swap = false,
 }: HeroCTAsProps) {
   const primaryRef = useRef<HTMLAnchorElement>(null);
   const secondaryRef = useRef<HTMLAnchorElement>(null);
@@ -81,8 +83,8 @@ export default function HeroCTAs({
         className={`flex items-center justify-center gap-1.5 ${paddingX} ${paddingY} ${radius} ${textSize} font-semibold hover:brightness-105 transition-all whitespace-nowrap`}
         style={{ ...primaryStyle, color: primaryText ?? '#F8FAFC' }}
       >
-        Sign Up for Free
-        <span style={{ color: primaryText ?? '#F8FAFC', display: 'flex', opacity: 0.5 }}><ArrowRightIcon size={iconSize} /></span>
+        {swap ? "Book a Demo" : "Sign Up for Free"}
+        <span style={{ color: primaryText ?? '#F8FAFC', display: 'flex', opacity: 0.5 }}>{swap ? <CursorIcon size={iconSize} /> : <ArrowRightIcon size={iconSize} />}</span>
       </Link>
       <Link
         ref={secondaryRef}
@@ -94,8 +96,8 @@ export default function HeroCTAs({
           color: secondaryText ?? '#7A716B',
         }}
       >
-        Book a Demo
-        <span><CursorIcon size={iconSize} /></span>
+        {swap ? "Learn more" : "Book a Demo"}
+        <span>{swap ? <ArrowRightIcon size={iconSize} /> : <CursorIcon size={iconSize} />}</span>
       </Link>
     </div>
   );
